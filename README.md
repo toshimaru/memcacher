@@ -1,5 +1,7 @@
 # Memcacher
 
+[![Build Status](https://travis-ci.org/toshimaru/memcacher.svg?branch=master)](https://travis-ci.org/toshimaru/memcacher)
+
 Better memcache integration for Rails.
 
 ## Installation

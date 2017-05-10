@@ -1,3 +1,5 @@
+require "active_support/cache"
+
 module ActiveSupport
   module Cache
     class Memcacher < MemCacheStore
