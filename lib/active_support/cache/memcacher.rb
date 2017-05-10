@@ -12,7 +12,7 @@ module ActiveSupport
       private
 
         def memcache_configuration
-          config_path = "config/memcache.yml"
+          config_path = "config/memcached.yml"
           yaml = Pathname.new(config_path)
 
           if yaml.exist?
