@@ -2,13 +2,16 @@ module ActiveSupport
   module Cache
     class Memcacher < MemCacheStore
       def initialize
-        puts "memcacher loaded!"
-        super
+        servers = []
+        config = memcache_configuration[Rails.env]
+        # TODO: if config is array
+        servers << "#{config["host"]}:#{config["port"]}"
+        super(servers)
       end
 
       private
 
-        def memcache_config
+        def memcache_configuration
           config_path = "config/memcache.yml"
           yaml = Pathname.new(config_path)
 
