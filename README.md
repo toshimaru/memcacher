@@ -1,6 +1,7 @@
 # Memcacher
 
 [![Build Status](https://travis-ci.org/toshimaru/memcacher.svg?branch=master)](https://travis-ci.org/toshimaru/memcacher)
+[![Gem Version](https://badge.fury.io/rb/memcacher.svg)](https://badge.fury.io/rb/memcacher)
 
 Better memcache integration for Rails.
 
