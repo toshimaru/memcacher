@@ -3,6 +3,8 @@ require "active_support/cache"
 module ActiveSupport
   module Cache
     class Memcacher < MemCacheStore
+      CONFIG_PATH = "config/memcached.yml"
+
       def initialize
         servers = []
         config = memcache_configuration[Rails.env]
@@ -14,14 +16,12 @@ module ActiveSupport
       private
 
         def memcache_configuration
-          config_path = "config/memcached.yml"
-          yaml = Pathname.new(config_path)
-
+          yaml = Pathname.new(CONFIG_PATH)
           if yaml.exist?
             require "yaml"
             YAML.load(yaml.read)
           else
-            raise "Could not load memcache configuration. No such file - #{config_path}"
+            raise "Could not load memcache configuration. No such file - #{CONFIG_PATH}"
           end
         end
     end
