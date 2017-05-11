@@ -1,4 +1,4 @@
-require "active_support/cache"
+require "rails"
 
 module ActiveSupport
   module Cache
@@ -18,7 +18,6 @@ module ActiveSupport
         def memcache_configuration
           yaml = Pathname.new(CONFIG_PATH)
           if yaml.exist?
-            require "yaml"
             YAML.load(yaml.read)
           else
             raise "Could not load memcache configuration. No such file - #{CONFIG_PATH}"
