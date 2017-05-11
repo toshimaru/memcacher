@@ -1,0 +1,32 @@
+---
+
+prepare:
+  fetch:
+  - "https://raw.githubusercontent.com/toshimaru/rubocop-rails/master/config/rails.yml"
+
+engines:
+  duplication:
+    enabled: true
+    config:
+      languages:
+      - ruby
+      - javascript
+      - python
+      - php
+  fixme:
+    enabled: true
+  rubocop:
+    enabled: true
+    config:
+      file: rails.yml
+ratings:
+  paths:
+  - "**.inc"
+  - "**.js"
+  - "**.jsx"
+  - "**.module"
+  - "**.php"
+  - "**.py"
+  - "**.rb"
+exclude_paths:
+- test/
