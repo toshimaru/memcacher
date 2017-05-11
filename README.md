@@ -15,7 +15,7 @@ gem 'memcacher'
 
 ## Configuration
 
-`config/environments/ENV.rb`
+`config/environments/[ENV].rb`
 
 ```rb
 Rails.application.configure do
@@ -49,7 +49,7 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/memcacher.
+Bug reports and pull requests are welcome on GitHub at https://github.com/toshimaru/memcacher.
 
 ## License
 
