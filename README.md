@@ -2,6 +2,8 @@
 
 [![Build Status](https://travis-ci.org/toshimaru/memcacher.svg?branch=master)](https://travis-ci.org/toshimaru/memcacher)
 [![Gem Version](https://badge.fury.io/rb/memcacher.svg)](https://badge.fury.io/rb/memcacher)
+[![Code Climate](https://codeclimate.com/github/toshimaru/memcacher/badges/gpa.svg)](https://codeclimate.com/github/toshimaru/memcacher)
+[![Test Coverage](https://codeclimate.com/github/toshimaru/memcacher/badges/coverage.svg)](https://codeclimate.com/github/toshimaru/memcacher/coverage)
 
 Better memcache integration for Rails.
 
