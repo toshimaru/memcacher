@@ -6,3 +6,8 @@ engines:
       - ruby
   rubocop:
     enabled: false
+ratings:
+  paths:
+  - "**.rb"
+exclude_paths:
+- test/
