@@ -4,6 +4,8 @@ engines:
     config:
       languages:
       - ruby
+  fixme:
+    enabled: true
   rubocop:
     enabled: false
 ratings:
